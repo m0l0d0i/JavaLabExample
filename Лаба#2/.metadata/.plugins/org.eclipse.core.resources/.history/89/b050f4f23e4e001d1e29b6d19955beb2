@@ -1,0 +1,11 @@
+public class Lab2 {
+
+	private void pp_eclipse() {
+		System.out.println("Привет Eclipse");
+	}
+	
+	public void main(String[] args) {
+		pp_eclipse();
+	}
+
+}

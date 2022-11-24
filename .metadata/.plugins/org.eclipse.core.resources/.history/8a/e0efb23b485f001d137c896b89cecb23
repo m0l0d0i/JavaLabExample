@@ -1,0 +1,58 @@
+import java.util.Random;
+
+public class example18_04_05
+{
+	public static void main(String[] args) 
+	{
+		int arr_i = 5;
+		int arr_j = 5;
+		int tempNumb;
+		
+		int[][] arr_2 = new int[arr_i][arr_j];
+		
+		Random rand= new Random();
+				
+		for(int i=0;i<arr_i;i++) 
+		{
+		    
+			for (int j=0;j<arr_j;j++)
+			{
+			    arr_2[i][j] = rand.nextInt(0, 10);
+			}
+		}
+	
+		
+		for(int i=0;i<arr_i;i++) 
+		{
+			for (int j=0;j<arr_j;j++)
+			{
+				System.out.print(arr_2 [i][j]);
+			}
+			System.out.println();
+		}
+		
+		for(int i=0;i<arr_i;i++) 
+		{
+			for (int j=0;j<arr_j;j++)
+			{
+			    if (i!=j)
+			    {
+			    	tempNumb = arr_2[i][j];
+			   		arr_2[i][j] = arr_2[j][i];
+			   		arr_2[j][i] = tempNumb;  	
+			    }else {break;}
+			}
+		}
+		
+		System.out.println();
+		
+		for(int i=0;i<arr_i;i++) 
+		{
+			for (int j=0;j<arr_j;j++)
+			{
+				System.out.print(arr_2 [i][j]);
+			}
+			System.out.println();
+		}
+	}
+}

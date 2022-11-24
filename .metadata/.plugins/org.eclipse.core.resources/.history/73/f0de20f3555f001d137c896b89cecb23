@@ -1,0 +1,47 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class example18_04_07
+{
+	public static void main(String[] args) 
+	{
+		int arr_i = 5;
+		int arr_j = 5;
+		int x = 0, y = arr_j, i = arr_j, j = 0;
+
+		
+		int[][] arr_2 = new int[arr_i][arr_j];
+		Random rand = new Random();
+//Вправо
+		for (int k; k<arr_j;k++)
+		{
+			
+		}
+		while (i>x)
+		{
+			x++;
+		}
+		
+		while (j<y)
+		{
+			y--;
+		}
+		
+		System.out.print(x+" "+y);
+//		for (int i = 0; i < arr_i; i++) {
+//			for (int j = 0; j < arr_j; j++) {
+//			    arr_2[i][j] = x;
+//			    x++;
+//			}
+//		}
+//
+//		for (int i = 0; i < arr_i; i++) {
+//			for (int j = 0; j < arr_j; j++) {
+//				System.out.print(arr_2[i][j]+"  ");
+//			}
+//			System.out.println();
+//
+//		}
+
+	}
+}

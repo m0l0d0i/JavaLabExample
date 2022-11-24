@@ -1,0 +1,24 @@
+public class example18_06_07 
+{
+    public static void main(String[] args) 
+    {
+        char[] arr = new char[]{'A','-','+'};
+
+        for (int a=0; a < arr.length; a++)
+        {
+            System.out.println(arr[a]+ ": " + Program.StaticMethod(arr)[a]);
+        }
+    }
+
+    static class Program
+    {
+        static int[] StaticMethod(char[] sArr)
+        {
+            int[] arg = new int[sArr.length];
+            for (int a=0;a<arg.length;a++){
+                arg[a]=sArr[a];
+            }
+            return arg;
+        }
+    }
+}

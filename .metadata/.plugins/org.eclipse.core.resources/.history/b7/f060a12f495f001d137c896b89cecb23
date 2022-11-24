@@ -1,0 +1,63 @@
+import java.util.Random;
+
+public class example18_04_06
+{
+	public static void main(String[] args) 
+	{
+		int x = -1, y = -1;
+		int arr_i = 5;
+		int arr_j = 5;
+		
+		Integer[][] arr_2 = new Integer[arr_i][arr_j];
+		
+		Integer[][] arr_1 = new Integer[arr_i-1][arr_j-1];
+		
+		Random rand = new Random();
+		
+		Print_arr print = new Print_arr();
+		
+		int del_row = rand.nextInt(0, arr_i);
+		int del_column = rand.nextInt(0, arr_j);
+				
+		for(int i=0;i<arr_i;i++) 
+		{
+			for (int j=0;j<arr_j;j++)
+			{
+			    arr_2[i][j] = rand.nextInt(0, 10);
+			}
+		}
+	
+		
+		print.pprint(arr_2);
+
+		
+		for(int i=0;i<arr_i;i++) 
+		{
+			if(i==del_row) {continue;}
+			x++;
+			for (int j=0;j<arr_j;j++)
+			{
+				if(j==del_column) {continue;}
+				y++;
+				arr_1[x][y] = arr_2 [i][j];
+			}
+			y = -1;
+			System.out.println();
+		}
+		System.out.println(del_column+"---"+del_row);
+		
+		print.pprint(arr_2);
+	}
+}
+
+class Print_arr 
+{
+	public void pprint(Integer[][] arr)
+	{
+		for(Integer[] row: arr)
+		{
+		    for(int element: row) {System.out.print(element);}
+		    System.out.println();
+		}   
+	}
+}

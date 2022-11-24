@@ -1,0 +1,8 @@
+public class Lab2 
+{
+	public void lab2(String[] args) 
+	{
+		System.out.println("sdsa");
+	}
+
+}

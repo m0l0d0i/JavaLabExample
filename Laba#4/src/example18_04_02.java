@@ -1,0 +1,16 @@
+public class example18_04_02
+{
+	public static void main(String[] args) 
+	{
+		int z = 0;
+		for(int i=0;i<10;i++) 
+		{
+			z++;
+			for (int j=0;j<z;j++)
+			{
+				System.out.print("#");
+			}
+			System.out.println();
+		}
+	}
+}

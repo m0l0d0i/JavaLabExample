@@ -1,0 +1,50 @@
+public class example18_06_05
+{
+    public static void main(String[] args) 
+    {    
+    System.out.print("Calculation without recursion for the number 5: ");
+    SqrNotRecursion.factorialSqrNotRecursion(5);
+    SquareRecursion.factorialSqrRecursion(6);
+    
+    }
+
+    static class SqrNotRecursion 
+    {
+        static void factorialSqrNotRecursion(int numb) 
+        {
+            int count = 0;
+            while (numb > 0) 
+            {
+                count += numb * numb;
+                numb--;
+            }
+            System.out.println(count);
+        }
+    }
+
+    static class SquareRecursion 
+    {
+        static int count = 0;
+        static void factorialSqrRecursion (int numb) 
+        {
+            if (numb > 0) 
+            {
+                count += numb * numb;
+                factorialSqrRecursion(numb - 1);
+            }else {
+                SquareRecursion.print();
+                SquareRecursion.setNull();
+            }
+        }
+
+        static void print() 
+        {
+            System.out.println("Solution with recursion for the number 6: " + count);
+        }
+
+        static void setNull() 
+        {
+            count = 0;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class example18_04_03
+{
+	public static void main(String[] args) 
+	{
+		int arr_i = 11;
+		int arr_j = 23;
+		
+		int[][] arr = new int[arr_i][arr_j];
+		
+		
+		for(int i=0;i<arr_i;i++) 
+		{
+			for (int j=0;j<arr_j;j++)
+			{
+				arr [i][j] = 2;
+			}
+		}
+	
+		for(int i=0;i<arr_i;i++) 
+		{
+			for (int j=0;j<arr_j;j++)
+			{
+				System.out.print(arr [i][j]);
+			}
+			System.out.println();
+		}
+	}
+}
+
+class print_arr () {
+	public Integer pprint() {
+		
+	}
+}

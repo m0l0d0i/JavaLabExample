@@ -1,0 +1,39 @@
+public class example18_04_04
+{
+	public static void main(String[] args) 
+	{
+		int arr_i = 11;
+		int arr_j = 0;
+		
+		Integer[][] arr = new Integer[arr_i][];
+		
+		
+		for(int i=0;i<arr_i;i++) 
+		{
+			arr[i] = new Integer[arr_j]; 
+			for (int j=0;j<arr_j;j++)
+			{
+			    arr[i][j] = 2;
+			}
+			arr_j++;
+		}
+	
+		Print_arr print = new Print_arr();
+		
+		print.pprint(arr);		
+
+	}
+}
+
+
+class Print_arr 
+{
+	public void pprint(Integer[][] arr)
+	{
+		for(Integer[] row: arr)
+		{
+		    for(int element: row) {System.out.print(element);}
+		    System.out.println();
+		}   
+	}
+}
