@@ -11,10 +11,8 @@
     <fullyQualifiedTypeName name="Alphabate"/>
     <fullyQualifiedTypeName name="example18_06_05.square"/>
     <fullyQualifiedTypeName name="example18_06_05.squareReqursion"/>
-    <fullyQualifiedTypeName name="java.security.PublicKey"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.DataInputStream"/>
     <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -28,4 +26,7 @@
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.security.PublicKey"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
